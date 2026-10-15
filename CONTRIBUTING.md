@@ -56,7 +56,7 @@ Entries live in Markdown tables, one row per resource:
 5. Open the PR. In the description, list the entries added/removed and confirm the link checks.
    发起 PR，在描述中列出增删条目并说明链接核验情况。
 
-> 兜底：仓库配有每周一次的自动死链巡检（`.github/workflows/link-check.yml`，非阻断、不卡 PR）；巡检失败时维护者会收到通知并集中修复，贡献者无需为此操心。
+> 兜底：仓库配有自动死链巡检（`.github/workflows/link-check.yml`）——提 PR 时全量检查一次（红色信号由 reviewer 判断，不硬拦合并），每周再定时巡检一轮兜底；巡检失败时维护者会收到通知并集中修复，贡献者无需为此操心。
 
 6. A maintainer reviews against the criteria above; please respond to review comments promptly.
    维护者将按上述标准评审，请及时回复评审意见。
