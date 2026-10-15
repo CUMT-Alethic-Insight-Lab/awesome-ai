@@ -1,0 +1,20 @@
+name: Link check | 死链巡检
+# 每周定时巡检 + 手动触发；不卡 PR——本仓的内容即链接，死链是唯一确定的腐烂方式。
+on:
+  schedule:
+    - cron: "17 2 * * 1"   # 每周一 10:17 北京时间
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: lycheeverse/lychee-action@v2
+        with:
+          args: --verbose --no-progress --retry-wait-time 5 --max-retries 3 './**/*.md'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
