@@ -40,6 +40,7 @@ This list is a **reference map**, not a study plan. If you are new to the lab, s
 | [Reasoning](#reasoning) | 推理 | 思维链、推理增强方法、推理模型复现 |
 | [Evaluation & Benchmarks](#evaluation-benchmarks) | 评估与基准 | 主流基准、评测框架、竞技场榜单 |
 | [Data Engineering](#data-engineering) | 数据工程 | 预训练语料、数据清洗与处理工具 |
+| [Efficient AI & Small Models](#efficient-ai) | 小模型与高效 AI | 紧凑架构、蒸馏、量化与端侧部署 |
 | [AI Infrastructure](#ai-infrastructure) | AI Infra | 分布式训练、微调框架、算子优化 |
 | [Serving & Deployment](#serving-deployment) | 部署与服务化 | 推理引擎、量化、本地部署 |
 | [Engineering Practice](#engineering-practice) | 工程实践 | ML 工程、MLOps、应用开发实战 |
@@ -204,6 +205,20 @@ This list is a **reference map**, not a study plan. If you are new to the lab, s
 | [modelscope/data-juicer](https://github.com/modelscope/data-juicer) | 阿里开源的一站式 LLM 数据处理系统，中文文档完善。 |
 | [togethercomputer/RedPajama-Data](https://github.com/togethercomputer/RedPajama-Data) | 复刻 LLaMA 配比的开放语料项目。 |
 | [Common Crawl](https://commoncrawl.org/) | 最大规模公开网页存档，多数语料的上游来源。 |
+
+<a id="efficient-ai"></a>
+## Efficient AI & Small Models | 小模型与高效 AI
+
+| Resource | 说明 |
+| --- | --- |
+| [MobileNetV2: Inverted Residuals and Linear Bottlenecks](https://arxiv.org/abs/1801.04381) | 以倒残差与线性瓶颈设计移动端视觉网络。 |
+| [EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks](https://arxiv.org/abs/1905.11946) | 系统研究卷积网络深度、宽度与分辨率的联合缩放。 |
+| [Distilling the Knowledge in a Neural Network](https://arxiv.org/abs/1503.02531) | 用教师软目标训练紧凑学生的知识蒸馏代表作。 |
+| [torchao Documentation](https://docs.pytorch.org/ao/stable/) | PyTorch 原生训练到部署优化文档，覆盖量化与稀疏工作流。 |
+| [PyTorch Quantization](https://docs.pytorch.org/docs/stable/quantization.html) | 官方量化数值表示、PTQ/QAT 与后端支持参考。 |
+| [ONNX Runtime](https://onnxruntime.ai/) | 跨平台 ONNX 模型推理运行时，支持多种执行后端。 |
+| [ExecuTorch](https://pytorch.org/executorch/) | 面向移动、边缘与嵌入式设备的 PyTorch 部署方案。 |
+| [LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale](https://arxiv.org/abs/2208.07339) | 研究大模型 INT8 矩阵乘与混合精度异常值处理。 |
 
 <a id="ai-infrastructure"></a>
 ## AI Infrastructure | AI Infra
