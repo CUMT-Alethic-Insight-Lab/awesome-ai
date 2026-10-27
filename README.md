@@ -30,6 +30,8 @@ This list is a **reference map**, not a study plan. If you are new to the lab, s
 
 | Section | 分类 | 收录内容 |
 | --- | --- | --- |
+| [Classical Machine Learning](#classical-machine-learning) | 经典机器学习 | 统计学习、评估、树模型与实验方法 |
+| [Deep Learning Foundations](#deep-learning-foundations) | 深度学习基础 | 反向传播、训练、CNN/RNN/Attention |
 | [LLM Fundamentals](#llm-fundamentals) | LLM 基础 | 架构、基座模型、入门课程与教材 |
 | [RAG & Retrieval](#rag-retrieval) | RAG 与检索 | 检索增强、向量检索、RAG 框架与评测 |
 | [Agents](#agents) | Agent 智能体 | 智能体范式、协议、主流框架 |
@@ -43,6 +45,34 @@ This list is a **reference map**, not a study plan. If you are new to the lab, s
 | [Engineering Practice](#engineering-practice) | 工程实践 | ML 工程、MLOps、应用开发实战 |
 
 ---
+
+<a id="classical-machine-learning"></a>
+## Classical Machine Learning | 经典机器学习
+
+| Resource | 说明 |
+| --- | --- |
+| [An Introduction to Statistical Learning with Applications in Python](https://www.statlearning.com/) | 覆盖回归、分类、重采样、树模型、SVM 与无监督学习，并附 Python Lab。 |
+| [INRIA scikit-learn MOOC](https://inria.github.io/scikit-learn-mooc/) | 以可执行 notebook 讲数据管道、模型选择、集成与评估。 |
+| [scikit-learn User Guide](https://scikit-learn.org/stable/user_guide.html) | 官方算法与 Pipeline 参考，适合按模型和预处理主题查阅。 |
+| [Mathematics for Machine Learning](https://mml-book.github.io/) | 作者公开教材，集中讲线代、向量微积分、概率与优化。 |
+| [Stanford CS229](https://cs229.stanford.edu/) | 数学导向的机器学习课程，覆盖统计学习与经典模型。 |
+| [李宏毅机器学习课程](https://speech.ee.ntu.edu.tw/~hylee/ml/2023-spring.php) | 中文课程主页，提供机器学习与深度学习主题讲授材料。 |
+| [Google Machine Learning Crash Course](https://developers.google.com/machine-learning/crash-course) | 包含回归、分类、数据与泛化练习的官方入门课程。 |
+| [UCI Machine Learning Repository](https://archive.ics.uci.edu/) | 提供适合经典算法小实验的公开数据集及使用说明。 |
+
+<a id="deep-learning-foundations"></a>
+## Deep Learning Foundations | 深度学习基础
+
+| Resource | 说明 |
+| --- | --- |
+| [Dive into Deep Learning](https://zh.d2l.ai/) | 中文可运行教材，覆盖 MLP、优化、CNN、RNN、Attention 与 Transformer。 |
+| [PyTorch Basics](https://docs.pytorch.org/tutorials/beginner/basics/intro.html) | 官方张量、数据加载、建模、自动求导与训练循环教程。 |
+| [karpathy/micrograd](https://github.com/karpathy/micrograd) | 用小型标量 autograd 实现展示反向传播机制。 |
+| [Neural Networks: Zero to Hero](https://karpathy.ai/zero-to-hero.html) | 从反向传播逐步讲到语言模型训练的公开视频与代码。 |
+| [Stanford CS231n](https://cs231n.stanford.edu/) | 讲视觉识别、神经网络与卷积架构的大学课程。 |
+| [Stanford CS224n](https://web.stanford.edu/class/cs224n/) | 从词向量、序列模型到 Transformer 的 NLP 课程。 |
+| [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) | 作者以张量流和图示解释 Transformer 结构。 |
+| [fast.ai: Practical Deep Learning](https://course.fast.ai/) | 以实践项目组织神经网络训练、视觉与 NLP 学习。 |
 
 <a id="llm-fundamentals"></a>
 ## LLM Fundamentals | LLM 基础
@@ -106,7 +136,8 @@ This list is a **reference map**, not a study plan. If you are new to the lab, s
 | [Proximal Policy Optimization (PPO)](https://arxiv.org/abs/1707.06347) | 最广泛使用的策略梯度算法，RLHF 核心组件。 |
 | [InstructGPT: Training LMs to Follow Instructions](https://arxiv.org/abs/2203.02155) | RLHF 对齐的奠基性论文，理解后训练必读。 |
 | [Direct Preference Optimization (DPO)](https://arxiv.org/abs/2305.18290) | 免显式 RL 的偏好优化方法，实现简单应用广。 |
-| [DeepSeek-R1](https://arxiv.org/abs/2501.12948) | 通过大规模强化学习激发推理能力，GRPO 算法出处。 |
+| [DeepSeekMath: GRPO](https://arxiv.org/abs/2402.03300) | 2024 年提出 Group Relative Policy Optimization 的原始论文。 |
+| [DeepSeek-R1](https://arxiv.org/abs/2501.12948) | 2025 年发布的推理模型报告，介绍大规模强化学习与冷启动数据路线。 |
 | [Farama-Foundation/Gymnasium](https://github.com/Farama-Foundation/Gymnasium) | RL 环境标准接口，OpenAI Gym 的社区继任者。 |
 | [DLR-RM/stable-baselines3](https://github.com/DLR-RM/stable-baselines3) | PyTorch 版主流 RL 算法可靠实现，实验复现利器。 |
 | [huggingface/trl](https://github.com/huggingface/trl) | HF 官方 RLHF 工具库，覆盖 SFT/DPO/PPO/GRPO。 |
