@@ -43,6 +43,10 @@ This list is a **reference map**, not a study plan. If you are new to the lab, s
 | [Efficient AI & Small Models](#efficient-ai) | 小模型与高效 AI | 紧凑架构、蒸馏、量化与端侧部署 |
 | [AI Infrastructure](#ai-infrastructure) | AI Infra | 分布式训练、微调框架、算子优化 |
 | [Serving & Deployment](#serving-deployment) | 部署与服务化 | 推理引擎、量化、本地部署 |
+| [Graphs & Recommenders](#graphs-recommenders) | 图与推荐 | 图神经网络、召回与排序 |
+| [Time Series & Audio](#time-series-audio) | 时序与音频 | 预测验证、语音与音频工具 |
+| [Robotics & Scientific AI](#robotics-scientific-ai) | 机器人与科学 AI | 模拟、VLA、科学计算与遥感 |
+| [Symbolic AI & Causality](#symbolic-causality) | 传统 AI 与因果 | 搜索规划、约束与因果推断 |
 | [Engineering Practice](#engineering-practice) | 工程实践 | ML 工程、MLOps、应用开发实战 |
 
 ---
@@ -250,6 +254,62 @@ This list is a **reference map**, not a study plan. If you are new to the lab, s
 | [ollama/ollama](https://github.com/ollama/ollama) | 一键本地运行开源模型的主流工具，适合快速体验。 |
 | [kvcache-ai/ktransformers](https://github.com/kvcache-ai/ktransformers) | 清华团队异构推理框架，单卡跑超大 MoE 模型。 |
 | [AutoGPTQ/AutoGPTQ](https://github.com/AutoGPTQ/AutoGPTQ) | GPTQ 量化部署主流实现，INT4 推理常用。 |
+
+<a id="graphs-recommenders"></a>
+## Graphs & Recommenders | 图与推荐
+
+| Resource | 说明 |
+| --- | --- |
+| [Graph Convolutional Networks](https://arxiv.org/abs/1609.02907) | 以图结构上的邻居传播进行半监督节点分类。 |
+| [Graph Attention Networks](https://arxiv.org/abs/1710.10903) | 用注意力为邻居分配权重的图网络代表作。 |
+| [PyTorch Geometric](https://pytorch-geometric.readthedocs.io/) | PyTorch 图学习库，提供消息传递、数据集与示例。 |
+| [Deep Graph Library](https://www.dgl.ai/) | 面向多种后端的图神经网络开发框架。 |
+| [Matrix Factorization Techniques for Recommender Systems](https://ieeexplore.ieee.org/document/5197422) | 讲隐反馈与矩阵分解推荐的经典综述。 |
+| [Neural Collaborative Filtering](https://arxiv.org/abs/1708.05031) | 用神经网络建模用户—物品交互的推荐方法。 |
+| [Microsoft Recommenders](https://github.com/recommenders-team/recommenders) | 提供召回、排序、评估notebook与工程示例。 |
+| [RecBole](https://github.com/RUCAIBox/RecBole) | 统一多类推荐模型与数据/评估流程的研究框架。 |
+
+<a id="time-series-audio"></a>
+## Time Series & Audio | 时序与音频
+
+| Resource | 说明 |
+| --- | --- |
+| [Forecasting: Principles and Practice](https://otexts.com/fpp3/) | 公开教材，覆盖时间序列基线、统计模型与预测验证。 |
+| [sktime](https://www.sktime.net/) | 与 sklearn 接口相容的时间序列学习框架。 |
+| [GluonTS](https://github.com/awslabs/gluonts) | 提供概率时间序列模型与评估工具。 |
+| [statsmodels](https://www.statsmodels.org/) | 提供 ARIMA、状态空间与统计检验的 Python 库。 |
+| [Speech and Language Processing](https://web.stanford.edu/~jurafsky/slp3/) | 作者公开草稿，覆盖语音、NLP 与序列建模。 |
+| [torchaudio Tutorials](https://docs.pytorch.org/audio/stable/tutorials.html) | 官方音频 IO、频谱、识别与处理教程。 |
+| [ESPnet](https://github.com/espnet/espnet) | 面向语音识别、合成与音频处理的研究工具包。 |
+| [librosa](https://librosa.org/) | 用于音频信号分析、特征提取与可视化的 Python 库。 |
+
+<a id="robotics-scientific-ai"></a>
+## Robotics & Scientific AI | 机器人与科学 AI
+
+| Resource | 说明 |
+| --- | --- |
+| [Open X-Embodiment](https://arxiv.org/abs/2310.08864) | 汇总多机构机器人数据并研究跨 embodiment 策略学习。 |
+| [LeRobot](https://github.com/huggingface/lerobot) | 提供机器人数据、策略、仿真与硬件示例。 |
+| [MuJoCo](https://mujoco.org/) | 用于机器人与生物力学研究的物理模拟器。 |
+| [Isaac Lab](https://github.com/isaac-sim/IsaacLab) | 基于 Isaac Sim 的机器人学习仿真框架。 |
+| [AlphaFold2](https://www.nature.com/articles/s41586-021-03819-2) | 结合序列与结构先验的高精度蛋白结构预测研究。 |
+| [DeepChem](https://github.com/deepchem/deepchem) | 面向药物发现、材料与化学数据的机器学习库。 |
+| [TorchGeo](https://github.com/microsoft/torchgeo) | 提供地理空间数据集、采样器与遥感模型工具。 |
+| [Radiant MLHub](https://mlhub.earth/) | 提供地理空间训练数据与模型资源入口。 |
+
+<a id="symbolic-causality"></a>
+## Symbolic AI & Causality | 传统 AI 与因果
+
+| Resource | 说明 |
+| --- | --- |
+| [Artificial Intelligence: A Modern Approach](https://aima.cs.berkeley.edu/) | 教材官方入口，覆盖搜索、逻辑、规划、概率与学习。 |
+| [MiniZinc](https://www.minizinc.org/) | 用高层模型描述约束满足与优化问题的工具链。 |
+| [python-constraint](https://github.com/python-constraint/python-constraint) | 用 Python 表达变量、域和约束的小型 CSP 库。 |
+| [Causal Inference: The Mixtape](https://mixtape.scunning.com/) | 公开教材，讲潜在结果、自然实验与因果识别设计。 |
+| [DoWhy](https://github.com/py-why/dowhy) | 按建模、识别、估计与反驳组织因果推断流程。 |
+| [EconML](https://github.com/py-why/EconML) | 用机器学习估计异质性处理效应的工具库。 |
+| [CausalML](https://github.com/uber/causalml) | 提供 uplift 与处理效应估计方法及示例。 |
+| [pgmpy](https://github.com/pgmpy/pgmpy) | 用于贝叶斯网络与概率图模型建模和推断。 |
 
 <a id="engineering-practice"></a>
 ## Engineering Practice | 工程实践
