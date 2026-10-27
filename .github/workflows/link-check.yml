@@ -18,8 +18,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: lycheeverse/lychee-action@v2
+      - name: Check links strictly except the confirmed unreachable CS229 endpoint
+        uses: lycheeverse/lychee-action@v2
         with:
-          args: --verbose --no-progress --retry-wait-time 5 --max-retries 3 './**/*.md'
+          # 202/403 can be anti-bot responses. Only this exact CS229 URL is excluded:
+          # GitHub runners and the maintainer network repeatedly time out connecting to it.
+          # Every other timeout and every 404 remains a hard failure.
+          args: --verbose --no-progress --retry-wait-time 5 --max-retries 3 --timeout 60 --accept 200,202,204,206,403 --exclude 'https://cs229\.stanford\.edu/?$' './**/*.md'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Probe the excluded CS229 endpoint without hiding other link failures
+        run: |
+          curl -IL --fail --connect-timeout 10 --max-time 30 --retry 1 \
+            https://cs229.stanford.edu/ || \
+            echo '::warning::CS229 is still unreachable from this runner; the exact URL is excluded from the strict gate.'

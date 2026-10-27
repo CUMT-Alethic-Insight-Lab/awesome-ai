@@ -13,7 +13,7 @@ Thank you for helping improve this list. This document defines what we accept, h
 | 1 | **Stable and well-known**: widely cited papers, established courses/textbooks, official documentation, major open-source projects with sustained maintenance. | **稳定知名**：高引论文、成熟课程与教材、官方文档、持续维护的主流开源项目。 |
 | 2 | **Official sources only**: link to arXiv abstract pages, official GitHub repositories, or official project/documentation sites. No mirrors, re-uploads, blog reposts, or paywalled copies. | **只用官方源**：链接限 arXiv 摘要页、官方 GitHub 仓库、项目官网/官方文档；不收镜像、转载、搬运或付费墙副本。 |
 | 3 | **High signal, not exhaustive**: 8–12 entries per category. Adding one entry usually means considering which existing entry it displaces. | **高信噪比而非求全**：每类 8–12 条；新增一条通常意味着考虑替换掉哪一条。 |
-| 4 | **Relevant to the lab's scope**: AI study and research engineering — LLMs, RAG, agents, RL, multimodal, reasoning, evaluation, data, infra, serving, and engineering practice. | **契合社团方向**：AI 学习与研究工程——LLM、RAG、Agent、强化学习、多模态、推理、评测、数据工程、Infra、部署与工程实践。 |
+| 4 | **Relevant to the lab's scope**: AI study and research engineering — classical ML, deep learning, LLMs, RAG, agents, RL, multimodal, data/efficient AI, graphs, recommenders, time series, audio, robotics, scientific AI, symbolic AI, causality, infra, serving, and engineering practice. | **契合社团方向**：AI 学习与研究工程——经典机器学习、深度学习、LLM、RAG、Agent、强化学习、多模态、数据/高效 AI、图、推荐、时序、音频、机器人、科学 AI、传统 AI、因果、Infra、部署与工程实践。 |
 
 ## What We Do Not Accept | 不予收录
 
