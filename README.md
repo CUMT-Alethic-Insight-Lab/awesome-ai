@@ -121,7 +121,7 @@ This list is a **reference map**, not a study plan. If you are new to the lab, s
 | [Toolformer](https://arxiv.org/abs/2302.04761) | 让模型自学调用外部工具的早期代表作。 |
 | [Voyager](https://arxiv.org/abs/2305.16291) | Minecraft 中的终身学习 Agent，长程规划经典案例。 |
 | [A Survey on LLM-based Autonomous Agents](https://arxiv.org/abs/2308.11432) | 复旦团队的 LLM 智能体综述，构建记忆规划行动全图景。 |
-| [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) | Anthropic 主导的工具与数据源开放协议，已成事实标准。 |
+| [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) | 由 Anthropic 开放发布的工具与数据源连接协议及规范。 |
 | [microsoft/autogen](https://github.com/microsoft/autogen) | 微软多智能体协作框架，对话式 Agent 编排。 |
 | [huggingface/smolagents](https://github.com/huggingface/smolagents) | HF 轻量 Agent 库，代码即动作的简洁实现。 |
 | [SWE-agent/SWE-agent](https://github.com/SWE-agent/SWE-agent) | 让 Agent 自动修复 GitHub issue 的学术研究项目。 |
@@ -134,11 +134,11 @@ This list is a **reference map**, not a study plan. If you are new to the lab, s
 
 | Resource | 说明 |
 | --- | --- |
-| [Sutton & Barto: Reinforcement Learning (2nd ed.)](http://incompleteideas.net/book/the-book-2nd.html) | 强化学习标准教材，作者官方公开电子版。 |
+| [Sutton & Barto: Reinforcement Learning (2nd ed.)](https://mitpress.mit.edu/9780262039246/reinforcement-learning/) | 强化学习教材官方出版页，覆盖 MDP、价值方法与策略梯度。 |
 | [《动手学强化学习》boyu-ai/Hands-on-RL](https://github.com/boyu-ai/Hands-on-RL) | 张伟楠等的中文开源教材仓库，配套代码可运行。 |
 | [OpenAI Spinning Up](https://spinningup.openai.com/) | OpenAI 官方 RL 入门教程，理论代码兼顾。 |
-| [Playing Atari with Deep RL (DQN)](https://arxiv.org/abs/1312.5602) | 深度强化学习开山之作。 |
-| [Proximal Policy Optimization (PPO)](https://arxiv.org/abs/1707.06347) | 最广泛使用的策略梯度算法，RLHF 核心组件。 |
+| [Playing Atari with Deep RL (DQN)](https://arxiv.org/abs/1312.5602) | 2013 年将深度 Q 网络用于 Atari 像素输入的代表性工作。 |
+| [Proximal Policy Optimization (PPO)](https://arxiv.org/abs/1707.06347) | 以截断比率等机制限制策略更新的策略梯度算法。 |
 | [InstructGPT: Training LMs to Follow Instructions](https://arxiv.org/abs/2203.02155) | RLHF 对齐的奠基性论文，理解后训练必读。 |
 | [Direct Preference Optimization (DPO)](https://arxiv.org/abs/2305.18290) | 免显式 RL 的偏好优化方法，实现简单应用广。 |
 | [DeepSeekMath: GRPO](https://arxiv.org/abs/2402.03300) | 2024 年提出 Group Relative Policy Optimization 的原始论文。 |
@@ -161,8 +161,8 @@ This list is a **reference map**, not a study plan. If you are new to the lab, s
 | [huggingface/diffusers](https://github.com/huggingface/diffusers) | 扩散模型官方标准库，文生图实践入口。 |
 | [openai/whisper](https://github.com/openai/whisper) | OpenAI 开源语音识别模型，多语种鲁棒性强。 |
 | [deepseek-ai/Janus](https://github.com/deepseek-ai/Janus) | 统一理解与生成的多模态模型，Janus-Pro 影响广泛。 |
-| [OpenGVLab/InternVL](https://github.com/OpenGVLab/InternVL) | 上海 AI Lab 开源 VLM 系列，榜单表现长期领先。 |
-| [QwenLM/Qwen3-VL](https://github.com/QwenLM/Qwen3-VL) | 通义千问多模态系列，中文生态最强的开源 VLM 之一。 |
+| [OpenGVLab/InternVL](https://github.com/OpenGVLab/InternVL) | 上海 AI Lab 的视觉语言模型、权重与训练代码项目。 |
+| [QwenLM/Qwen3-VL](https://github.com/QwenLM/Qwen3-VL) | Qwen 团队 2025 年开始发布的视觉语言模型系列，含权重与使用文档。 |
 
 <a id="reasoning"></a>
 ## Reasoning | 推理
@@ -279,7 +279,7 @@ This list is a **reference map**, not a study plan. If you are new to the lab, s
 | [GluonTS](https://github.com/awslabs/gluonts) | 提供概率时间序列模型与评估工具。 |
 | [statsmodels](https://www.statsmodels.org/) | 提供 ARIMA、状态空间与统计检验的 Python 库。 |
 | [Speech and Language Processing](https://web.stanford.edu/~jurafsky/slp3/) | 作者公开草稿，覆盖语音、NLP 与序列建模。 |
-| [torchaudio Tutorials](https://docs.pytorch.org/audio/stable/tutorials.html) | 官方音频 IO、频谱、识别与处理教程。 |
+| [Torchaudio Documentation](https://docs.pytorch.org/audio/stable/) | 官方音频处理文档；2.8 起进入维护期，编解码能力已转向 TorchCodec。 |
 | [ESPnet](https://github.com/espnet/espnet) | 面向语音识别、合成与音频处理的研究工具包。 |
 | [librosa](https://librosa.org/) | 用于音频信号分析、特征提取与可视化的 Python 库。 |
 
@@ -294,8 +294,8 @@ This list is a **reference map**, not a study plan. If you are new to the lab, s
 | [Isaac Lab](https://github.com/isaac-sim/IsaacLab) | 基于 Isaac Sim 的机器人学习仿真框架。 |
 | [AlphaFold2](https://www.nature.com/articles/s41586-021-03819-2) | 结合序列与结构先验的高精度蛋白结构预测研究。 |
 | [DeepChem](https://github.com/deepchem/deepchem) | 面向药物发现、材料与化学数据的机器学习库。 |
-| [TorchGeo](https://github.com/microsoft/torchgeo) | 提供地理空间数据集、采样器与遥感模型工具。 |
-| [Radiant MLHub](https://mlhub.earth/) | 提供地理空间训练数据与模型资源入口。 |
+| [TorchGeo](https://github.com/torchgeo/torchgeo) | 提供地理空间数据集、采样器与遥感模型工具。 |
+| [Radiant Earth · Source Cooperative](https://source.coop/radiantearth) | 提供原 Radiant MLHub 等地理空间开放训练数据。 |
 
 <a id="symbolic-causality"></a>
 ## Symbolic AI & Causality | 传统 AI 与因果
