@@ -30,6 +30,8 @@ This list is a **reference map**, not a study plan. If you are new to the lab, s
 
 | Section | 分类 | 收录内容 |
 | --- | --- | --- |
+| [Classical Machine Learning](#classical-machine-learning) | 经典机器学习 | 统计学习、评估、树模型与实验方法 |
+| [Deep Learning Foundations](#deep-learning-foundations) | 深度学习基础 | 反向传播、训练、CNN/RNN/Attention |
 | [LLM Fundamentals](#llm-fundamentals) | LLM 基础 | 架构、基座模型、入门课程与教材 |
 | [RAG & Retrieval](#rag-retrieval) | RAG 与检索 | 检索增强、向量检索、RAG 框架与评测 |
 | [Agents](#agents) | Agent 智能体 | 智能体范式、协议、主流框架 |
@@ -38,11 +40,44 @@ This list is a **reference map**, not a study plan. If you are new to the lab, s
 | [Reasoning](#reasoning) | 推理 | 思维链、推理增强方法、推理模型复现 |
 | [Evaluation & Benchmarks](#evaluation-benchmarks) | 评估与基准 | 主流基准、评测框架、竞技场榜单 |
 | [Data Engineering](#data-engineering) | 数据工程 | 预训练语料、数据清洗与处理工具 |
+| [Efficient AI & Small Models](#efficient-ai) | 小模型与高效 AI | 紧凑架构、蒸馏、量化与端侧部署 |
 | [AI Infrastructure](#ai-infrastructure) | AI Infra | 分布式训练、微调框架、算子优化 |
 | [Serving & Deployment](#serving-deployment) | 部署与服务化 | 推理引擎、量化、本地部署 |
+| [Graphs & Recommenders](#graphs-recommenders) | 图与推荐 | 图神经网络、召回与排序 |
+| [Time Series & Audio](#time-series-audio) | 时序与音频 | 预测验证、语音与音频工具 |
+| [Robotics & Scientific AI](#robotics-scientific-ai) | 机器人与科学 AI | 模拟、VLA、科学计算与遥感 |
+| [Symbolic AI & Causality](#symbolic-causality) | 传统 AI 与因果 | 搜索规划、约束与因果推断 |
 | [Engineering Practice](#engineering-practice) | 工程实践 | ML 工程、MLOps、应用开发实战 |
 
 ---
+
+<a id="classical-machine-learning"></a>
+## Classical Machine Learning | 经典机器学习
+
+| Resource | 说明 |
+| --- | --- |
+| [An Introduction to Statistical Learning with Applications in Python](https://www.statlearning.com/) | 覆盖回归、分类、重采样、树模型、SVM 与无监督学习，并附 Python Lab。 |
+| [INRIA scikit-learn MOOC](https://inria.github.io/scikit-learn-mooc/) | 以可执行 notebook 讲数据管道、模型选择、集成与评估。 |
+| [scikit-learn User Guide](https://scikit-learn.org/stable/user_guide.html) | 官方算法与 Pipeline 参考，适合按模型和预处理主题查阅。 |
+| [Mathematics for Machine Learning](https://mml-book.github.io/) | 作者公开教材，集中讲线代、向量微积分、概率与优化。 |
+| [Stanford CS229](https://cs229.stanford.edu/) | 数学导向的机器学习课程，覆盖统计学习与经典模型。 |
+| [李宏毅机器学习课程](https://speech.ee.ntu.edu.tw/~hylee/ml/2023-spring.php) | 中文课程主页，提供机器学习与深度学习主题讲授材料。 |
+| [Google Machine Learning Crash Course](https://developers.google.com/machine-learning/crash-course) | 包含回归、分类、数据与泛化练习的官方入门课程。 |
+| [UCI Machine Learning Repository](https://archive.ics.uci.edu/) | 提供适合经典算法小实验的公开数据集及使用说明。 |
+
+<a id="deep-learning-foundations"></a>
+## Deep Learning Foundations | 深度学习基础
+
+| Resource | 说明 |
+| --- | --- |
+| [Dive into Deep Learning](https://zh.d2l.ai/) | 中文可运行教材，覆盖 MLP、优化、CNN、RNN、Attention 与 Transformer。 |
+| [PyTorch Basics](https://docs.pytorch.org/tutorials/beginner/basics/intro.html) | 官方张量、数据加载、建模、自动求导与训练循环教程。 |
+| [karpathy/micrograd](https://github.com/karpathy/micrograd) | 用小型标量 autograd 实现展示反向传播机制。 |
+| [Neural Networks: Zero to Hero](https://karpathy.ai/zero-to-hero.html) | 从反向传播逐步讲到语言模型训练的公开视频与代码。 |
+| [Stanford CS231n](https://cs231n.stanford.edu/) | 讲视觉识别、神经网络与卷积架构的大学课程。 |
+| [Stanford CS224n](https://web.stanford.edu/class/cs224n/) | 从词向量、序列模型到 Transformer 的 NLP 课程。 |
+| [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) | 作者以张量流和图示解释 Transformer 结构。 |
+| [fast.ai: Practical Deep Learning](https://course.fast.ai/) | 以实践项目组织神经网络训练、视觉与 NLP 学习。 |
 
 <a id="llm-fundamentals"></a>
 ## LLM Fundamentals | LLM 基础
@@ -86,7 +121,7 @@ This list is a **reference map**, not a study plan. If you are new to the lab, s
 | [Toolformer](https://arxiv.org/abs/2302.04761) | 让模型自学调用外部工具的早期代表作。 |
 | [Voyager](https://arxiv.org/abs/2305.16291) | Minecraft 中的终身学习 Agent，长程规划经典案例。 |
 | [A Survey on LLM-based Autonomous Agents](https://arxiv.org/abs/2308.11432) | 复旦团队的 LLM 智能体综述，构建记忆规划行动全图景。 |
-| [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) | Anthropic 主导的工具与数据源开放协议，已成事实标准。 |
+| [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) | 由 Anthropic 开放发布的工具与数据源连接协议及规范。 |
 | [microsoft/autogen](https://github.com/microsoft/autogen) | 微软多智能体协作框架，对话式 Agent 编排。 |
 | [huggingface/smolagents](https://github.com/huggingface/smolagents) | HF 轻量 Agent 库，代码即动作的简洁实现。 |
 | [SWE-agent/SWE-agent](https://github.com/SWE-agent/SWE-agent) | 让 Agent 自动修复 GitHub issue 的学术研究项目。 |
@@ -99,14 +134,15 @@ This list is a **reference map**, not a study plan. If you are new to the lab, s
 
 | Resource | 说明 |
 | --- | --- |
-| [Sutton & Barto: Reinforcement Learning (2nd ed.)](http://incompleteideas.net/book/the-book-2nd.html) | 强化学习标准教材，作者官方公开电子版。 |
+| [Sutton & Barto: Reinforcement Learning (2nd ed.)](https://mitpress.mit.edu/9780262039246/reinforcement-learning/) | 强化学习教材官方出版页，覆盖 MDP、价值方法与策略梯度。 |
 | [《动手学强化学习》boyu-ai/Hands-on-RL](https://github.com/boyu-ai/Hands-on-RL) | 张伟楠等的中文开源教材仓库，配套代码可运行。 |
 | [OpenAI Spinning Up](https://spinningup.openai.com/) | OpenAI 官方 RL 入门教程，理论代码兼顾。 |
-| [Playing Atari with Deep RL (DQN)](https://arxiv.org/abs/1312.5602) | 深度强化学习开山之作。 |
-| [Proximal Policy Optimization (PPO)](https://arxiv.org/abs/1707.06347) | 最广泛使用的策略梯度算法，RLHF 核心组件。 |
+| [Playing Atari with Deep RL (DQN)](https://arxiv.org/abs/1312.5602) | 2013 年将深度 Q 网络用于 Atari 像素输入的代表性工作。 |
+| [Proximal Policy Optimization (PPO)](https://arxiv.org/abs/1707.06347) | 以截断比率等机制限制策略更新的策略梯度算法。 |
 | [InstructGPT: Training LMs to Follow Instructions](https://arxiv.org/abs/2203.02155) | RLHF 对齐的奠基性论文，理解后训练必读。 |
 | [Direct Preference Optimization (DPO)](https://arxiv.org/abs/2305.18290) | 免显式 RL 的偏好优化方法，实现简单应用广。 |
-| [DeepSeek-R1](https://arxiv.org/abs/2501.12948) | 通过大规模强化学习激发推理能力，GRPO 算法出处。 |
+| [DeepSeekMath: GRPO](https://arxiv.org/abs/2402.03300) | 2024 年提出 Group Relative Policy Optimization 的原始论文。 |
+| [DeepSeek-R1](https://arxiv.org/abs/2501.12948) | 2025 年发布的推理模型报告，介绍大规模强化学习与冷启动数据路线。 |
 | [Farama-Foundation/Gymnasium](https://github.com/Farama-Foundation/Gymnasium) | RL 环境标准接口，OpenAI Gym 的社区继任者。 |
 | [DLR-RM/stable-baselines3](https://github.com/DLR-RM/stable-baselines3) | PyTorch 版主流 RL 算法可靠实现，实验复现利器。 |
 | [huggingface/trl](https://github.com/huggingface/trl) | HF 官方 RLHF 工具库，覆盖 SFT/DPO/PPO/GRPO。 |
@@ -125,8 +161,8 @@ This list is a **reference map**, not a study plan. If you are new to the lab, s
 | [huggingface/diffusers](https://github.com/huggingface/diffusers) | 扩散模型官方标准库，文生图实践入口。 |
 | [openai/whisper](https://github.com/openai/whisper) | OpenAI 开源语音识别模型，多语种鲁棒性强。 |
 | [deepseek-ai/Janus](https://github.com/deepseek-ai/Janus) | 统一理解与生成的多模态模型，Janus-Pro 影响广泛。 |
-| [OpenGVLab/InternVL](https://github.com/OpenGVLab/InternVL) | 上海 AI Lab 开源 VLM 系列，榜单表现长期领先。 |
-| [QwenLM/Qwen3-VL](https://github.com/QwenLM/Qwen3-VL) | 通义千问多模态系列，中文生态最强的开源 VLM 之一。 |
+| [OpenGVLab/InternVL](https://github.com/OpenGVLab/InternVL) | 上海 AI Lab 的视觉语言模型、权重与训练代码项目。 |
+| [QwenLM/Qwen3-VL](https://github.com/QwenLM/Qwen3-VL) | Qwen 团队 2025 年开始发布的视觉语言模型系列，含权重与使用文档。 |
 
 <a id="reasoning"></a>
 ## Reasoning | 推理
@@ -174,6 +210,20 @@ This list is a **reference map**, not a study plan. If you are new to the lab, s
 | [togethercomputer/RedPajama-Data](https://github.com/togethercomputer/RedPajama-Data) | 复刻 LLaMA 配比的开放语料项目。 |
 | [Common Crawl](https://commoncrawl.org/) | 最大规模公开网页存档，多数语料的上游来源。 |
 
+<a id="efficient-ai"></a>
+## Efficient AI & Small Models | 小模型与高效 AI
+
+| Resource | 说明 |
+| --- | --- |
+| [MobileNetV2: Inverted Residuals and Linear Bottlenecks](https://arxiv.org/abs/1801.04381) | 以倒残差与线性瓶颈设计移动端视觉网络。 |
+| [EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks](https://arxiv.org/abs/1905.11946) | 系统研究卷积网络深度、宽度与分辨率的联合缩放。 |
+| [Distilling the Knowledge in a Neural Network](https://arxiv.org/abs/1503.02531) | 用教师软目标训练紧凑学生的知识蒸馏代表作。 |
+| [torchao Documentation](https://docs.pytorch.org/ao/stable/) | PyTorch 原生训练到部署优化文档，覆盖量化与稀疏工作流。 |
+| [PyTorch Quantization](https://docs.pytorch.org/docs/stable/quantization.html) | 官方量化数值表示、PTQ/QAT 与后端支持参考。 |
+| [ONNX Runtime](https://onnxruntime.ai/) | 跨平台 ONNX 模型推理运行时，支持多种执行后端。 |
+| [ExecuTorch](https://pytorch.org/executorch/) | 面向移动、边缘与嵌入式设备的 PyTorch 部署方案。 |
+| [LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale](https://arxiv.org/abs/2208.07339) | 研究大模型 INT8 矩阵乘与混合精度异常值处理。 |
+
 <a id="ai-infrastructure"></a>
 ## AI Infrastructure | AI Infra
 
@@ -204,6 +254,62 @@ This list is a **reference map**, not a study plan. If you are new to the lab, s
 | [ollama/ollama](https://github.com/ollama/ollama) | 一键本地运行开源模型的主流工具，适合快速体验。 |
 | [kvcache-ai/ktransformers](https://github.com/kvcache-ai/ktransformers) | 清华团队异构推理框架，单卡跑超大 MoE 模型。 |
 | [AutoGPTQ/AutoGPTQ](https://github.com/AutoGPTQ/AutoGPTQ) | GPTQ 量化部署主流实现，INT4 推理常用。 |
+
+<a id="graphs-recommenders"></a>
+## Graphs & Recommenders | 图与推荐
+
+| Resource | 说明 |
+| --- | --- |
+| [Graph Convolutional Networks](https://arxiv.org/abs/1609.02907) | 以图结构上的邻居传播进行半监督节点分类。 |
+| [Graph Attention Networks](https://arxiv.org/abs/1710.10903) | 用注意力为邻居分配权重的图网络代表作。 |
+| [PyTorch Geometric](https://pytorch-geometric.readthedocs.io/) | PyTorch 图学习库，提供消息传递、数据集与示例。 |
+| [Deep Graph Library](https://www.dgl.ai/) | 面向多种后端的图神经网络开发框架。 |
+| [Matrix Factorization Techniques for Recommender Systems](https://ieeexplore.ieee.org/document/5197422) | 讲隐反馈与矩阵分解推荐的经典综述。 |
+| [Neural Collaborative Filtering](https://arxiv.org/abs/1708.05031) | 用神经网络建模用户—物品交互的推荐方法。 |
+| [Microsoft Recommenders](https://github.com/recommenders-team/recommenders) | 提供召回、排序、评估notebook与工程示例。 |
+| [RecBole](https://github.com/RUCAIBox/RecBole) | 统一多类推荐模型与数据/评估流程的研究框架。 |
+
+<a id="time-series-audio"></a>
+## Time Series & Audio | 时序与音频
+
+| Resource | 说明 |
+| --- | --- |
+| [Forecasting: Principles and Practice](https://otexts.com/fpp3/) | 公开教材，覆盖时间序列基线、统计模型与预测验证。 |
+| [sktime](https://www.sktime.net/) | 与 sklearn 接口相容的时间序列学习框架。 |
+| [GluonTS](https://github.com/awslabs/gluonts) | 提供概率时间序列模型与评估工具。 |
+| [statsmodels](https://www.statsmodels.org/) | 提供 ARIMA、状态空间与统计检验的 Python 库。 |
+| [Speech and Language Processing](https://web.stanford.edu/~jurafsky/slp3/) | 作者公开草稿，覆盖语音、NLP 与序列建模。 |
+| [Torchaudio Documentation](https://docs.pytorch.org/audio/stable/) | 官方音频处理文档；2.8 起进入维护期，编解码能力已转向 TorchCodec。 |
+| [ESPnet](https://github.com/espnet/espnet) | 面向语音识别、合成与音频处理的研究工具包。 |
+| [librosa](https://librosa.org/) | 用于音频信号分析、特征提取与可视化的 Python 库。 |
+
+<a id="robotics-scientific-ai"></a>
+## Robotics & Scientific AI | 机器人与科学 AI
+
+| Resource | 说明 |
+| --- | --- |
+| [Open X-Embodiment](https://arxiv.org/abs/2310.08864) | 汇总多机构机器人数据并研究跨 embodiment 策略学习。 |
+| [LeRobot](https://github.com/huggingface/lerobot) | 提供机器人数据、策略、仿真与硬件示例。 |
+| [MuJoCo](https://mujoco.org/) | 用于机器人与生物力学研究的物理模拟器。 |
+| [Isaac Lab](https://github.com/isaac-sim/IsaacLab) | 基于 Isaac Sim 的机器人学习仿真框架。 |
+| [AlphaFold2](https://www.nature.com/articles/s41586-021-03819-2) | 结合序列与结构先验的高精度蛋白结构预测研究。 |
+| [DeepChem](https://github.com/deepchem/deepchem) | 面向药物发现、材料与化学数据的机器学习库。 |
+| [TorchGeo](https://github.com/torchgeo/torchgeo) | 提供地理空间数据集、采样器与遥感模型工具。 |
+| [Radiant Earth · Source Cooperative](https://source.coop/radiantearth) | 提供原 Radiant MLHub 等地理空间开放训练数据。 |
+
+<a id="symbolic-causality"></a>
+## Symbolic AI & Causality | 传统 AI 与因果
+
+| Resource | 说明 |
+| --- | --- |
+| [Artificial Intelligence: A Modern Approach](https://aima.cs.berkeley.edu/) | 教材官方入口，覆盖搜索、逻辑、规划、概率与学习。 |
+| [MiniZinc](https://www.minizinc.org/) | 用高层模型描述约束满足与优化问题的工具链。 |
+| [python-constraint](https://github.com/python-constraint/python-constraint) | 用 Python 表达变量、域和约束的小型 CSP 库。 |
+| [Causal Inference: The Mixtape](https://mixtape.scunning.com/) | 公开教材，讲潜在结果、自然实验与因果识别设计。 |
+| [DoWhy](https://github.com/py-why/dowhy) | 按建模、识别、估计与反驳组织因果推断流程。 |
+| [EconML](https://github.com/py-why/EconML) | 用机器学习估计异质性处理效应的工具库。 |
+| [CausalML](https://github.com/uber/causalml) | 提供 uplift 与处理效应估计方法及示例。 |
+| [pgmpy](https://github.com/pgmpy/pgmpy) | 用于贝叶斯网络与概率图模型建模和推断。 |
 
 <a id="engineering-practice"></a>
 ## Engineering Practice | 工程实践
